@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family:  Arial, sans-serif,sans-serif;
+            background-color:white;
+            color:black;
+            margin: 100px;
+            background-image:url("https://wallpapergod.com/images/hd/pastel-aesthetic-800X1280-wallpaper-67rni9z4rygyqztx.jpeg" );
+        
+            background-size: 99%;
+        }
+        .container{
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+
+        }
+        
+
+        
+    </style>
+    
+</head>
+<body><center>
+    <form method="POST"><br>
+        <label for="">Title:</label><br>
+        <input name="name" type="text" value="{{ post[1] }}"><br>
+        <label for="">Content:</label><br>
+        <textarea name="content" rows="5"value="{{ post[2] }}"></textarea><br>
+        
+        <label for="">Slug:</label><br>
+        <input name="slug" type="text" value="{{ post[4] }}"><br>
+        <button>update post</button>
+    </form></center>
+</body>
+</html> 

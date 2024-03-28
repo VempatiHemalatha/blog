@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Verification Code</h1>
+    <form method="POST"action="{{url_for('otp',username=username,password=password,mobile=mobile,email=email,address=address,otp=otp)}}">
+    <label for="">Enter OTP:</label>
+    <input type="text" name="uotp"><br>
+    
+    <button>login</button>
+    </form>
+</body>
+</html>
